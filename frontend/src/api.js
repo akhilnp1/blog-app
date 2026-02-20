@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://localhost:8000' })
+const api = axios.create({ baseURL: 'https://blog-app-backend-isqi.onrender.com' })
 
 export const getPosts    = ()           => api.get('/posts')
 export const getPost     = (id)         => api.get(`/posts/${id}`)
