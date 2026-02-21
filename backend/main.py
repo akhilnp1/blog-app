@@ -11,8 +11,7 @@ app = FastAPI(title="Blog API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
-    allow_credentials=True,
+    allow_origins=["http://localhost:5173", "https://zesty-sopapillas-8e4f75.netlify.app"],    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
